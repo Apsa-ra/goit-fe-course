@@ -23,14 +23,13 @@ body {
     background-color: white;
 }
 .profile {
-    padding-top: 15px;
-    padding-bottom: 25px;
+    margin-bottom: 35px;
 }
-h1, h4 {
+h2, h4 {
     color: #263555;
     font-weight: bold;
 }
-h1 {
+h2 {
     margin-bottom: 25px;
 }
 h4 {
@@ -42,24 +41,26 @@ h4 {
     width: 100%;
 }
 
-.paragraf1, .paragraf3 {
+.paragraf {
     color: #263555;
     font-weight: bold;
     margin: 20px 0px;
 }
 .principles {
-    padding: 25px 0px;
-    width: 325px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
 }
-
-.divider{
-    display: inline-block;
-    width: 100%;
+.principles li {
+    list-style-type: none;
 }
 .offer {
-    padding: 25px 0px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #4e5050;
 }
-.offer_text {
+.offer-text {
     margin-bottom: 40px;
 }
 .list {
@@ -68,9 +69,9 @@ h4 {
     margin-left: 20px;
     column-count: 2;
 }
-li {
+.item {
     list-style-type: none;
-    height: 30px;
+    margin: 4px;
 }
 
 
