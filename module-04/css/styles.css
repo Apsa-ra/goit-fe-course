@@ -27,7 +27,7 @@ body {
 
 .image { 
     width: 360px;
-    height: 280px;
+    /* height: 280px; */
     margin: 0px 25px 20px 0px;
     float: left;
 }
@@ -35,7 +35,7 @@ body {
 .profile {
     display: inline-block;
     width: 72%;
-    margin-right: 50px;
+    margin-right: calc(5% - 4px);
     vertical-align: top;
 }
 
@@ -63,7 +63,6 @@ body {
 .principles {
     display: inline-block;
     width: 23%;
-    margin: -4px;
 }
 
 .principle-list {
@@ -114,7 +113,7 @@ body {
 .offer {
     display: inline-block;
     width: 72%;
-    margin-right: 50px;
+    margin-right: calc(5% - 4px);
     vertical-align: top;
 }
 
@@ -153,13 +152,13 @@ body {
 .testimonial {
     display: inline-block;
     width: 23%;
-    margin: -4px;
 }
 
 .blockquote {
     color: #263555;
     font-size: 15px;
     padding: 20px;
+    margin-bottom:30px;
     background-color: #fcfafa;
     border: 1px solid #dedbdb;
 }
@@ -173,7 +172,7 @@ body {
 }
 
 .author {
-    margin: 30px 0px 15px 0px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 16px;
     color: #263555;
