@@ -250,6 +250,7 @@ body {
     margin-bottom: 25px;
 }
 .author {
+    display: block;
     margin-bottom: 15px;
     text-align: center;
     font-size: 16px;
@@ -258,6 +259,7 @@ body {
 }
 
 .author-pos {
+    display: block;
     text-align: center;
 }
 
@@ -284,10 +286,11 @@ body {
     bottom: -13px;
 }
 
-.cite-text::before {
+.blockquote-text::before {
     content: open-quote " ";
 }
-.cite-text::after {
+
+.blockquote-text::after {
     content: " " close-quote;
 }
 
