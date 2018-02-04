@@ -1,6 +1,5 @@
 body {
     min-height: 100vh;
-    padding-top: 230px;
     padding-bottom: 270px;
     font-size: 13px;
     line-height: 19px;
@@ -10,19 +9,135 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}   
- 
-.wrapper {
+}
+/* TO TOP BUTTON */
+.to-top {
+    display: inline-block;
+    position: fixed;
+    right: 120px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: #38afe5;
+}
+.to-top::before {
+    display: inline-block;
+    content: "";
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #ffffff transparent;
+}  
+.page-wrapper {
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    padding: 90px 60px;
-    background-color: #ffffff;
+}
+/* HEADER NAVIGATION */
+
+.header {
+    width: 100%;
+    padding: 100px;    
+}
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;     
+  }
+.menu-item {
+     position: relative;
+     text-align: center;
 }
 
+.menu-item:nth-child(3) {
+  margin-right: 240px;
+}
+.menu-link {
+     display: block;
+     text-decoration: none;
+     font-family:'Pathway Gothic One';
+     color: #ffffff; 
+     font-size: 28px;
+     text-transform: uppercase;
+     text-align: right; 
+     padding-bottom: 10px;
+}
+  
+.submenu-link {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+     font-family:'Pathway Gothic One';
+     color: #6b7488; 
+     font-size: 20px;
+     text-transform: uppercase;
+     text-align: center; 
+}
+  
+.logo {
+  display: inline-block;
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  background-color: #ffffff;
+  color: #263555;
+  font-size: 59.58px;
+  text-align: center;
+  line-height: 140px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: 'Dorsa';
+}
+  
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+}
+ .submenu::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 4.3px 2.5px;
+    border-color: transparent transparent #ffffff transparent;
+}
+.menu-item:hover > .submenu {
+   display: block;
+}
+  
+.menu-item:hover > .menu-link {
+    color: #263555;
+}
+.submenu-item:hover > .submenu-link {
+    color: #263555;
+}
+/* WRAPPER */
+.wrapper {
+    padding-top: 115px;
+    padding-bottom: 90px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #ffffff;
+}
+/* TOP SECTION */
 .first-section {
-    padding-top: 25px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .image { 
@@ -31,27 +146,22 @@ body {
     margin: 0px 25px 20px 0px;
     float: left;
 }
-
 .profile {
-    display: inline-block;
-    width: 72%;
-    margin-right: calc(5% - 4px);
-    vertical-align: top;
+    flex: 0 0 72%;
 }
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-
 .paragraf {
+      margin-bottom: 20px;
+}
+.title {
     color: #263555;
     font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif;   
 }
-
 .profile h2, .principles h2 {
     margin-bottom: 50px;
     color: #263555;
@@ -59,28 +169,23 @@ body {
     font-weight: bold;
     line-height: 1;
 }
-
 .principles {
-    display: inline-block;
-    width: 23%;
+    flex: 0 0 23%;
 }
-
 .principle-list {
-    margin: auto;
     counter-reset: scorer;
 }
-
 .principle-item::before {
-        counter-increment: scorer;
-        content: counter(scorer);
-        display: inline-block;
-        flex: 0 0 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #38afe5;
-        color: #fefefe;
-        text-align: center;
-        line-height: 30px;
+    counter-increment: scorer;
+    content: counter(scorer);
+    display: inline-block;
+    flex: 0 0 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #38afe5;
+    color: #fefefe;
+    text-align: center;
+    line-height: 30px;
 }
 
 .principle-item { 
@@ -88,35 +193,26 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .principle-item:last-child {
 	margin-bottom: 0;
 }
-
 .article {
     flex: 0 0 calc(100% - 40px);
-	/* display: inline-block;
-	width: calc(100% - 46px);
-	vertical-align: top; */
 }
-
 .article-title {
-    color: #263555;
-    font-size: 15px;
-    font-weight: bold; 
     margin-bottom: 10px;
  } 
 
+ /* SECOND SECTION */
 .second-section {
     padding-top: 55px;
-    border-top: 1px solid #dedbdb;   
+    border-top: 1px solid #dedbdb;
+    display: flex;
+    justify-content: space-between;   
 }
 
 .offer {
-    display: inline-block;
-    width: 72%;
-    margin-right: calc(5% - 4px);
-    vertical-align: top;
+    flex: 0 0 72%;
 }
 
 .offer h2, .testimonial h2 {
@@ -128,10 +224,6 @@ body {
 
 .offer h2 {
     margin-bottom: 50px;
-}
-
-.testimonial h2 {
-    margin-bottom: 25px;
 }
 
 .offer-text {
@@ -150,29 +242,13 @@ body {
     color: #38afe5;
     margin-right: 10px;
 }
-
+/* TESTIMONIAL */
 .testimonial {
-    display: inline-block;
-    width: 23%;
+    flex: 0 0 23%;
 }
-
-.blockquote {
-    color: #263555;
-    font-size: 15px;
-    padding: 20px;
-    margin-bottom:30px;
-    background-color: #fcfafa;
-    border: 1px solid #dedbdb;
+.testimonial h2 {
+    margin-bottom: 25px;
 }
-
-.blockquote::before {
-    content: open-quote " ";
-}
-
-.blockquote::after {
-    content: " " close-quote;
-}
-
 .author {
     margin-bottom: 15px;
     text-align: center;
@@ -181,6 +257,135 @@ body {
     line-height: 23px;
 }
 
-.cite {
+.author-pos {
     text-align: center;
 }
+
+.blockquote {
+    position: relative;
+    padding: 20px;
+    margin-bottom:30px;
+    background-color: #fcfafa;
+    border: 1px solid #dedbdb;
+} 
+
+.blockquote::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid #dedbdb;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #dedbdb;
+    background-color: #fcfafa;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: -13px;
+}
+
+.cite-text::before {
+    content: open-quote " ";
+}
+.cite-text::after {
+    content: " " close-quote;
+}
+
+/* INFORMATION SECTION */
+.information {
+    padding: 30px 130px;
+    background-color: #30455b;
+    display: flex;
+    justify-content: space-between;
+}
+  .info-links {
+    flex: 0 0 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+  .ref {
+    flex: 0 0 30%;
+}
+  .contact {
+    flex: 0 0 25%;
+}
+  .contact > p {
+    margin-bottom: 5%;
+}
+  .link, .contact {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-transform: uppercase;
+}
+  .adress {
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+}
+/* FOOTER */
+.mastfooter {
+    padding: 20px 0px;
+}
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .social-links li {
+   margin-right: 10px;
+  }
+  .social-links li:last-child {
+    margin-right: 0px;
+  }
+  .twitter, .facebook, .google, .linkedin {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  .facebook {
+    background-image: url(https://image.flaticon.com/icons/svg/134/134020.svg);
+  }
+  .twitter {
+   background-image: url(https://image.flaticon.com/icons/svg/220/220375.svg);
+  }
+  .google {
+   background-image: url(https://image.flaticon.com/icons/svg/134/134033.svg);
+  }
+  .linkedin {
+   background-image: url(https://image.flaticon.com/icons/svg/220/220343.svg);
+  }
+  
+  .footer {
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer li {
+    padding: 0px 5px;
+    line-height: 1;
+    border-right: 1px solid #ffffff;
+  }
+  
+  .footer li:last-child {
+    border-right: none;
+  }
+  
+  .footer li a {
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  
