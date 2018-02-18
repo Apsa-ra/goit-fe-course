@@ -1,0 +1,285 @@
+:root {
+    --pink-color: #ea4f53;
+    --black-color: #000000;
+    --grey-color: #8f8f8f;
+    --white-color: #fff;
+    --main-font-stack: Montserrat, sans-serif;
+}
+html {
+    font-size: 14px;
+}
+/* MASTHEAD */
+.masthead {
+    min-height: 38.57rem;
+    background-image: url('../img/bg320-image.png'), url('../img/bg320-layer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 1.428rem;
+    padding-bottom: 10rem;
+} 
+.conteiner {
+    /* width: 88%; */
+    min-width: 320px;
+    max-width: 940px;
+    padding: 0 1.428rem 0 1.428rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+}
+
+.log-in, .sign-up {
+    display: inline-block;
+    padding: 0.7142rem 1.071rem;
+    color: var(--white-color);
+}
+.sign-up {
+    border: 0.1428rem solid #fff;
+    border-radius: 1.071rem;
+}
+
+.main-title {
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    font-size: 1.428rem;
+    line-height: 2.714rem;
+    color: var(--white-color);
+}
+
+.hero-section {
+    text-align: center;
+    color: var(--white-color);
+}
+
+.hero-caption {
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    font-size: 2.142rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.071rem;
+}
+.hero-banner {
+    width: 78.57%;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    margin-bottom: 1.071rem;
+}
+
+.hero-button {
+    display: block;
+    height: 2.857rem;
+    width: 20rem;
+    margin: auto;
+    background-color: var(--pink-color);
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    line-height: 2.857rem;
+    border-radius: 1.785rem;
+    color: var(--white-color);
+}
+/* TEAM SECTION */
+.team-section {
+    min-height: 84.285rem;
+    padding-top: 5rem;
+    padding-bottom: 4.2857rem;
+}
+.team-title {
+    color: var(--black-color);
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    font-size: 1.571rem;
+    margin-bottom: 1.428rem;
+    text-align: center;
+}
+.team-list {
+    margin-bottom: 1.785rem;
+}
+.team-list-item {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.78rem 0 1.78rem;
+}
+
+.team-card {
+    text-align: center;
+}
+.card-picture {
+    position: relative;
+    width: 8.571rem;
+    margin: auto;
+    margin-bottom: 1.428rem;
+}
+
+.team-card-img {
+    display: block;
+    width: 8.57rem;
+    height: 8.57rem;
+    border-radius: 50%;
+}
+.team-card-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2.285rem;
+    width: 2.285rem;
+    border-radius: 50%;
+    border: 0.2857rem solid white;
+}
+.icon-1 {
+    background-color: var(--pink-color);
+    background-image: url('../img/icon-1.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.icon-2 {
+    background-color: #ffa507;
+    background-image: url('../img/icon-2.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.icon-3 {
+    background-color: #1cd7ad;
+    background-image: url('../img/icon-3.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.icon-4 {
+    background-image: url('../img/icon-4.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: #4e73db;
+}
+.team-card-name {
+    color: var(--black-color);
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    margin-bottom: 1.071rem;
+}
+.team-card-disc {
+    color: var(--grey-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.teammate-button {
+    display: block;
+    height: 2.857rem;
+    width: 20rem;
+    margin: auto;
+    background-color: var(--white-color);
+    font-family: var(--main-font-stack);
+    font-weight: 700;
+    line-height: 2.857rem;
+    border-radius: 1.785rem;
+    border: 0.1428rem solid var(--pink-color);
+    color: var(--pink-color);
+    text-align: center;
+}
+/* 
+     MEDIA */
+
+@media (max-width: 767px) {
+    .team-list-item:not(:last-child) {
+        margin-bottom: 1.785rem;
+    }
+    .header-menu {
+        margin-bottom: 7.857rem;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+  .masthead {
+    background-image: url('../img/bg320x2-image.png'), url('../img/bg320-layer.png');
+  }
+} 
+
+}
+@media (min-width: 768px) and (max-width: 939px){
+    .team-list-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 1.785rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .masthead {
+        background-image: url('../img/bg768-image.png'), url('../img/bg768-layer.png');
+        padding-top: 3.214rem;
+        padding-bottom: 16.785rem;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+.masthead {
+  background-image: url('../img/bg768x2-image.png'), url('../img/bg768-layer.png');
+    }
+}
+    .header {
+        margin-bottom: 10.71rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team-list-item {
+        flex: 0 0 50%;
+    }
+    .hero-caption {
+        font-size: 3.71rem;
+        line-height: 4.64rem;
+        margin-bottom: 2.428rem;
+    }
+    .hero-banner {
+        font-size: 1.714rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.285rem;
+    }
+    .hero-button {
+        width: 16.428rem;
+    }
+    .team-section {
+        min-height: 52.857rem;
+    }
+    .team-title {
+        margin-bottom: 2.5rem;
+    }
+    .teammate-button {
+        width: 13.57rem;
+    }
+} 
+
+@media (min-width: 940px) {
+    .masthead {
+        background-image: url('../img/bg-image.png'), url('../img/bg-layer.png');
+    }
+    
+    .team-list-item {
+        flex: 0 0 25%;
+    }
+    .team-section {
+        min-height: 36.42rem;
+    }    
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+  .masthead {
+    background-image: url('../img/bg940x2-image.png'), url('../img/bg-layer.png');
+  }
+} 
+}
