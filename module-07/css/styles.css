@@ -93,6 +93,7 @@
     min-height: 35.625rem;
     background-color: var(--white-color);
     padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
 .service-header {
     width: 31%;
@@ -182,6 +183,9 @@
 .contact-title {
     color: var(--white-color);
 }
+.inputs input:not(:last-child) {
+    margin-bottom: 1.5625rem;
+}
 .inputs input, .forms textarea {
     font-family: Montserrat, sans-serif;
     font-size: 0.875rem;
@@ -190,6 +194,7 @@
     color: var(--grey-color);
     border-radius: 0.1875rem;
     width: 100%;
+    
 }
 ::placeholder {
     font-family: Montserrat, sans-serif;
@@ -204,14 +209,13 @@
 }
 .forms {
     display: flex;
-    height: 13.125rem;
     justify-content: space-between;
     margin-bottom: 1.875rem;
 }
 .inputs {
     flex: 0 0 48%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -226,4 +230,5 @@
     text-transform: uppercase;
     border-radius: 0.1875rem;
     background-color: var(--yellow-color);
+    border: none;
 }
