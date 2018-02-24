@@ -11,17 +11,18 @@ html {
 /* MASTHEAD */
 .masthead {
     min-height: 38.57rem;
-    background-image: url('../img/bg320-image.png'), url('../img/bg320-layer.png');
+    background-image: url('../img/bg320-image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
     padding-top: 1.428rem;
     padding-bottom: 10rem;
 } 
 .conteiner {
     /* width: 88%; */
-    min-width: 320px;
-    max-width: 940px;
+    min-width: 22,8571rem;
+    max-width: 67.1428rem;
     padding: 0 1.428rem 0 1.428rem;
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +45,7 @@ html {
 }
 
 .main-title {
+    display: inline-block;
     font-family: var(--main-font-stack);
     font-weight: 700;
     font-size: 1.428rem;
@@ -88,7 +90,6 @@ html {
 }
 /* TEAM SECTION */
 .team-section {
-    min-height: 84.285rem;
     padding-top: 5rem;
     padding-bottom: 4.2857rem;
 }
@@ -121,8 +122,7 @@ html {
 
 .team-card-img {
     display: block;
-    width: 8.57rem;
-    height: 8.57rem;
+    width: 8.571rem;
     border-radius: 50%;
 }
 .team-card-icon {
@@ -202,7 +202,7 @@ html {
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
   .masthead {
-    background-image: url('../img/bg320x2-image.png'), url('../img/bg320-layer.png');
+    background-image: url('../img/bg320x2-image.png');
   }
 } 
 
@@ -215,7 +215,7 @@ html {
 
 @media (min-width: 768px) {
     .masthead {
-        background-image: url('../img/bg768-image.png'), url('../img/bg768-layer.png');
+        background-image: url('../img/bg768-image.png');
         padding-top: 3.214rem;
         padding-bottom: 16.785rem;
     }
@@ -223,7 +223,7 @@ html {
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 .masthead {
-  background-image: url('../img/bg768x2-image.png'), url('../img/bg768-layer.png');
+  background-image: url('../img/bg768x2-image.png');
     }
 }
     .header {
@@ -266,7 +266,7 @@ html {
 
 @media (min-width: 940px) {
     .masthead {
-        background-image: url('../img/bg-image.png'), url('../img/bg-layer.png');
+        background-image: url('../img/bg-image.png');
     }
     
     .team-list-item {
@@ -279,7 +279,7 @@ html {
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
   .masthead {
-    background-image: url('../img/bg940x2-image.png'), url('../img/bg-layer.png');
+    background-image: url('../img/bg940x2-image.png');
   }
 } 
 }
