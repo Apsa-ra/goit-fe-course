@@ -6,31 +6,50 @@
     <title><Module-08></title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="masthead">
-        <div class="conteiner">
-            <header class="header">
-                <div class="header-menu">
-                    <a href="#" class="log-in">Log in</a>
-                    <a href="#" class="sign-up">Sign up</a>
+        <div class="container">
+            <div class="row justify-content-between header ">
+                <div class="col-md-4 col-lg-3">
+                     <div class="header-menu">
+                        <a href="#" class="log-in">Log in</a>
+                        <a href="#" class="sign-up">Sign up</a>
+                     </div>
                 </div>
-                <a href="#" class="main-title">URLAUBSGLÜCK</a>
-            </header>
-            <section class="hero-section">
-                <h2 class="hero-caption">Share your holiday dreams</h2>
-                <p class="hero-banner">And find the perfect partner to fullfill it</p>
-                <a href="#" class="hero-button">Find your holiday partner</a>                
-            </section>
+                <div class="col-md-3 col-lg-3">
+                    <a href="#" class="main-title">URLAUBSGLÜCK</a>
+                </div>    
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <h2 class="hero-caption">Share your holiday dreams</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-7">
+                    <p class="hero-banner">And find the perfect partner to fullfill it</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-9 col-md-5 col-lg-4">
+                    <a href="#" class="hero-button">Find your holiday partner</a>
+                </div>
+            </div> 
         </div>
     </div>
 <!-- TEAM SECTION -->
     <div class="team-section">
-        <section class="conteiner">
-            <h2 class="team-title">Meet a partner for your best holiday</h2>
-            <ul class="team-list">
-                <li class="team-list-item">
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-6">
+                    <h2 class="team-title">Meet a partner for your best holiday</h2>
+                </div>
+            </div>    
+            <div class="row team-list">
+                <div class="col-md-6 col-lg-3 team-list-item">
                     <div class="team-card">
                         <div class="card-picture">
                             <img src="img/team-mate-1.png"   
@@ -42,21 +61,21 @@
                         <p class="team-card-name">Bradley Hunter</p>
                         <p class="team-card-disc">Based in Chicago. I love playing tennis and loud music.</p>
                     </div>
-                </li>
-                <li class="team-list-item">
-                        <div class="team-card">
-                            <div class="card-picture">
-                                <img src="img/team-mate-2.png"   
+                </div>
+                <div class="col-md-6 col-lg-3 team-list-item">
+                    <div class="team-card">
+                        <div class="card-picture">
+                            <img src="img/team-mate-2.png"   
                                 srcset="img/team-mate-2x2.png 244w,
                                         img/team-mate-2.png 122w"  
                                 alt="teammate" class="team-card-img">
                                 <span class="team-card-icon icon-2"></span>
-                            </div>
-                            <p class="team-card-name">Lucas Marsha</p>
-                            <p class="team-card-disc">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
                         </div>
-                    </li>
-                <li class="team-list-item">
+                        <p class="team-card-name">Lucas Marsha</p>
+                        <p class="team-card-disc">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-lg-3 team-list-item">
                     <div class="team-card">
                         <div class="card-picture">
                             <img src="img/team-mate-3.png"   
@@ -68,8 +87,8 @@
                         <p class="team-card-name">Heather Walker</p>
                         <p class="team-card-disc">I'm a happy person that loves cats and climbing on mountains.</p>
                     </div>
-                </li>
-                <li class="team-list-item">
+                </div>
+                <div class="col-md-6 col-lg-3 team-list-item">
                         <div class="team-card">
                             <div class="card-picture">
                                 <img src="img/team-mate-4.png"   
@@ -81,9 +100,13 @@
                             <p class="team-card-name">Bradley Hunter</p>
                             <p class="team-card-disc">Based in Chicago. fvdfbdbrrebebreberbeI love playing tennis and loud music.</p>
                         </div>
-                    </li>
-            </ul>
-            <a href="#" class="teammate-button">See other partners</a> 
+                    </div>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 col-lg-3">
+                    <a href="#" class="teammate-button">See other partners</a> 
+                </div>
+            </div>
         </section>
     </div>
       
