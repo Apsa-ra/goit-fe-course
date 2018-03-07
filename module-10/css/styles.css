@@ -13,23 +13,23 @@ html {
   background-image: -webkit-gradient( 
     linear, 
     left bottom, left top, 
-    from(rgb(252,227,138, 0.81)),
-    to(rgb(243,129,129, 0.81))
+    from(rgba(252,227,138, 0.81)),
+    to(rgba(243,129,129, 0.81))
      ), url('../img/bg-image.jpg');
   background-image: -webkit-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image.jpg');
   background-image: -o-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image.jpg');
   background-image: linear-gradient( 
     to top, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image.jpg');
   background-size: cover;
   background-position: center;
@@ -317,23 +317,23 @@ nav__item {
   background-image: -webkit-gradient( 
     linear, 
     left bottom, left top, 
-    from(rgb(252,227,138, 0.81)),
-    to(rgb(243,129,129, 0.81))
+    from(rgba(252,227,138, 0.81)),
+    to(rgba(243,129,129, 0.81))
      );
   background-image: -webkit-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      );
   background-image: -o-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      );
   background-image: linear-gradient( 
     to top, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      );
   position: absolute;
   top: 0;
@@ -469,7 +469,7 @@ nav__item {
   font-family: 'Roboto',sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 300;
   color: #e7e7e7;
 }
@@ -478,7 +478,7 @@ nav__item {
   font-family: 'Roboto',sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 300;
   color: #e7e7e7;
 }
@@ -487,7 +487,7 @@ nav__item {
   font-family: 'Roboto',sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 300;
   color: #e7e7e7;
 }
@@ -496,7 +496,7 @@ nav__item {
   font-family: 'Roboto',sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 300;
   color: #e7e7e7;
 }
@@ -522,23 +522,23 @@ nav__item {
   background-image: -webkit-gradient( 
     linear, 
     left bottom, left top, 
-    from(rgb(252,227,138, 0.81)),
-    to(rgb(243,129,129, 0.81))
+    from(rgba(252,227,138, 0.81)),
+    to(rgba(243,129,129, 0.81))
      ), url('../img/bg-image@2x.jpg');
   background-image: -webkit-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image@2x.jpg');
   background-image: -o-linear-gradient( 
     bottom, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image@2x.jpg');
   background-image: linear-gradient( 
     to top, 
-    rgb(252,227,138, 0.81) 0%,
-    rgb(243,129,129, 0.81) 100%
+    rgba(252,227,138, 0.81) 0%,
+    rgba(243,129,129, 0.81) 100%
      ), url('../img/bg-image@2x.jpg');
     }
 }
